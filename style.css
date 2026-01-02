@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-slate-300: hsl(212, 45%, 89%);
+    --color-slate-500: hsl(216, 15%, 48%);
+    --color-slate-900: hsl(218, 44%, 22%);
+
+    --font-family-base: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    /* Typography */
+    --font-family-base: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    --font-size-base: 15px;
+    --line-height-base: 1.6;
+
+    /* Layout / container */
+    --design-width-mobile: 375px;
+    --design-width-desktop: 1440px;
+    --page-gutter: 1rem;
+
+    /* spacing */
+    --spacing-40: 40px;
+    --spacing-24: 24px;
+    --spacing-16: 16px;
+    --spacing-8: 8px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: var(--font-size-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-slate-300);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+p {
+    margin: 0;
+}
+
+.content-qr {
+    border-radius: 10px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--spacing-16) var(--spacing-16) var(--spacing-40);
+    gap: var(--spacing-24);
+}
+
+.content-qr img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.outfit-regular {
+    font-weight: 100;
+    font-family: var(--font-family-base);
+    line-height: 140%;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    /*color: #D5E1EF;*/
+}
+
+.outfit-bold {
+    font-weight: 700;
+    font-family: var(--font-family-base);
+    line-height: 120%;
+    font-size: 22px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-text {
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+    gap: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+}
